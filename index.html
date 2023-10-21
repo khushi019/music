@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Survey</title>
+</head>
+<body>
+    <h1 id="title">Music Survey</h1>
+    <p1>Tell us about your music preferences</p1>
+    <form id="survey-form">
+        <div class="rowtab">
+            <div class="labels">
+                <label id="name-label"
+                for="name">Name:</label>
+            </div>
+            <div class="tab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
+        </div>
+        <div class="rowtab">
+            <div class="labels">
+                <label id="email-label"
+                for="email">Email:</label>
+            </div>
+            <div class="tab">
+                <input email="email" id="email" class="input-field" placeholder="Enter your email id" required>
+            </div>
+        </div>    
+        <div class="rowtab">
+            <div class="labels">
+                <label id="age-label"
+                for="age">Age:</label>
+            </div>
+            <div class="tab">
+                <input autofocus type="number" age="age" id="age" class="input-field" placeholder="How old are you" max="100" min="0" required>
+            </div>
+        </div>    
+        <div class="rowtab">
+            <div class="labels">
+                <label
+                for="dropdown">Favourite Genre:</label>
+            </div>
+            <div class="tab">
+                <select autofocus type="dropdown" genre="genre" id="dropdown" class="select-field" required>
+               <option disabled value>Choose a genre</option>
+               <option value="classical">Classical</option>
+               <option value="Hip-Hop">Hip-Hop</option>
+               <option value="retro">Retro</option>
+               <option value="Bollywood">Bollywood</option>
+               <option value="jazz">Jazz</option>
+               <option value="Romantic">Romantic</option>
+               <option value="slow">Slow</option>
+               <option value="Punjabi">Punjabi</option>
+               <option value="Indian pop">Indian pop</option>
+               <option value="Regional">Regional</option>
+               <option value="Electronic">Electronic</option>
+               <option value="Bhajan">Bhajan</option>
+               <option value="English">English</option>
+                 </select>
+            </div>
+        </div>  
+        <div class="rowtab">
+            <div class="labels">
+                <label for="frequency">How often do you listen to music?</label>
+            </div>
+            <div class="right-tab">
+                <p>
+                    <label for>
+                        <input type="radio" name="radio-buttons" class="frequency" checked/>
+                        <span>Every second</span>
+                    </label>
+                </p>
+                <p>
+                    <label for>
+                        <input type="radio" name="radio-buttons" class="frequency" checked/>
+                        <span>A few times a day</span>
+                    </label>
+                </p>
+                <p>
+                    <label for>
+                        <input type="radio" name="radio-buttons" class="frequency" checked/>
+                        <span>Once a day</span>
+                    </label>
+                </p>
+                <p>
+                    <label for>
+                        <input type="radio" name="radio-buttons" class="frequency" checked/>
+                        <span>Few times a week</span>
+                    </label>
+                </p>
+                <p>
+                    <label for>
+                        <input type="radio" name="radio-buttons" class="frequency" checked/>
+                        <span>Not sure</span>
+                    </label>
+                </p>
+            </div>
+        </div>
+        <div class="rowtab">
+            <div class="labels">
+                <label>Which is your Favourite Singer:</label>
+            </div>
+        </div>
+        <p><label><input type="checkbox" value="1" name="checkbox" class="where"/>
+            <span>Arijit Singh</span>
+         </label></p>
+         <p><label><input type="checkbox" value="2" name="checkbox" class="where"/>
+            <span>Amit Trivedi</span>
+         </label></p>
+         <p><label><input type="checkbox" value="3" name="checkbox" class="where"/>
+            <span>Atif Aslam</span>
+         </label></p>
+         
+         <p><label><input type="checkbox" value="4" name="checkbox" class="where"/>
+            <span>Kishore Kumar</span>
+         </label></p>
+         
+         <p><label><input type="checkbox" value="5" name="checkbox" class="where"/>
+            <span>Sonu Nigam</span>
+         </label></p>
+         <p><label><input type="checkbox" value="6" name="checkbox" class="where"/>
+            <span>Mohit Chauhan</span>
+         </label></p>
+         
+         <p><label><input type="checkbox" value="7" name="checkbox" class="where"/>
+            <span>Shreya Ghoshal</span>
+         </label></p>
+         <p><label><input type="checkbox" value="8" name="checkbox" class="where"/>
+            <span>Lata Mangeshkar</span>
+         </label></p>
+         
+         <p><label><input type="checkbox" value="9" name="checkbox" class="where"/>
+            <span>Taylor Swift</span>
+         </label></p>
+         
+         <p><label><input type="checkbox" value="10" name="checkbox" class="where"/>
+            <span>Ed Sheeran</span>
+         </label></p>
+         
+         <p><label><input type="checkbox" value="22" name="checkbox" class="where"/>
+            <span>Others</span>
+         </label></p><textarea id="where" value="23" class="input-field" placeholder="other"></textarea>
+    <div class="rowtab">
+        <div class="labels">
+            <label for="comments">Do you have any other comments</label>
+        </div>
+        <div><textarea class="input-field" id="comments" name="comments" placeholder="enter comment"></textarea> </div>
+    </div>
+    <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
